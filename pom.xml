@@ -20,14 +20,21 @@
   </build>
   
   <distributionManagement>
+     <repository>
+       <id>nexus</id>
+       <name>Ategha Release Nexus Repository</name>
+       <url>http://3.26.52.158:8081/repository/MWA-release/</url>
+     </repository>
     <snapshotRepository>
-      <id>nexusdeploymentrepo</id>
-      <url>http://34.125.145.185:8081/repository/maven-snapshots/</url>
+       <id>nexus</id>
+       <name>Ategha Snapshot Nexus Repository</name>
+       <url>http://3.26.52.158:8081/repository/MWA/</url>
     </snapshotRepository>
-	<repository>
-	  <id>nexusdeploymentrepo</id>
-      <url>http://34.125.145.185:8081/repository/maven-releases/</url>
-    </repository>
-  
   </distributionManagement>
+	<properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <sonar.host.url>http:3.25.221.27:9000/</sonar.host.url>
+    <sonar.login>admin</sonar.login>
+    <sonar.password>admin</sonar.password>
+  </properties>
 </project>
